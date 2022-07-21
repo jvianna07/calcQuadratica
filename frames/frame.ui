@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Função Quadrática</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(213, 215, 226);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>1</number>
+      </property>
+      <item row="1" column="3">
+       <widget class="QDoubleSpinBox" name="valB">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <double>-99.989999999999995</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QDoubleSpinBox" name="valA">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <double>-99.989999999999995</double>
+        </property>
+        <property name="singleStep">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string> a</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="7">
+       <widget class="QLabel" name="results">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(186, 189, 182);
+font: 14pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <property name="indent">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string> c</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string> b</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QDoubleSpinBox" name="valC">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <double>-99.989999999999995</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>x²</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>x</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_9">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_8">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 52pt &quot;Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <widget class="QPushButton" name="btnCalcular">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>206</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Calcular</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="4">
+       <widget class="QPushButton" name="btnLimpar">
+        <property name="minimumSize">
+         <size>
+          <width>206</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Limpar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>479</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sans</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Ar&amp;quivo</string>
+    </property>
+    <addaction name="actionImprimir"/>
+    <addaction name="actionSalvar_resultado"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>E&amp;ditar</string>
+    </property>
+    <addaction name="actionZerar_valores"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionColar"/>
+   </widget>
+   <widget class="QMenu" name="menuFerramentas">
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>Ferrame&amp;ntas</string>
+    </property>
+    <addaction name="actionPrefer_ncias"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>A&amp;juda</string>
+    </property>
+    <addaction name="actionAjuda"/>
+    <addaction name="actionActualiza_es"/>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuFerramentas"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <action name="actionAjuda">
+   <property name="text">
+    <string>&amp;Ajuda</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>&amp;Sobre</string>
+   </property>
+  </action>
+  <action name="actionSalvar_resultado">
+   <property name="text">
+    <string>&amp;Salvar resultado</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sai&amp;r</string>
+   </property>
+  </action>
+  <action name="actionZerar_valores">
+   <property name="text">
+    <string>&amp;Zerar valores</string>
+   </property>
+  </action>
+  <action name="actionPrefer_ncias">
+   <property name="text">
+    <string>&amp;Preferências</string>
+   </property>
+  </action>
+  <action name="actionActualiza_es">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>A&amp;ctualizações</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Copiar</string>
+   </property>
+  </action>
+  <action name="actionImprimir">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Imprimir</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>C&amp;olar</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Recortar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
